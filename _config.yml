@@ -3,18 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 云游君的小站
+title: wiaihe的小站
 subtitle: All at sea.
 description: 希望能成为一个有趣的人
 keywords:
-  - YunYouJun
+  - wiaihe
   - Blog
-  - 云游君
   - 博客
-  - 云游君的小站
-  - yunyoujun.cn
-  - www.yunyoujun.cn
-author: 云游君
+  - wiaihe的小站
+  - wiaihe.ml
+  - www.wiaihe.ml
+author: wiaihe
 # language:
 #   - zh-CN
 #   - en
@@ -23,7 +22,7 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'https://yoursite.com/child' and root as '/child/'
-url: https://www.yunyoujun.cn
+url: https://wiaihe.ml
 root: /
 # posts/:name/
 permalink: :title/ # :category/:title
