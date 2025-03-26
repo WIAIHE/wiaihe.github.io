@@ -125,3 +125,8 @@
 #sudoku-board .ipt{
 	color: #FF8080;
 }
+body {
+  background-image: url('./logo.png');
+  background-position: top left;
+  background-repeat: no-repeat;
+}
