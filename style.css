@@ -132,8 +132,23 @@ body {
 }
 
 body {
-    background-image: url('./background.jpg');
-    background-size: cover; /* 图片覆盖整个背景 */
-    background-position: center; /* 图片居中显示 */
-    background-repeat: no-repeat; /* 图片不重复 */
+  position: relative;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 使水印居中 */
+  background-image: url('./background.jpg'); /* 替换为你图片的 URL */
+  background-size: contain; /* 保持图片比例 */
+  background-repeat: no-repeat;
+  opacity: 0.1; /* 设置水印的透明度 */
+  z-index: 9999;
+  pointer-events: none; /* 水印不可点击 */
+  user-select: none; /* 禁止选中水印 */
+  width: 200px; /* 设置水印的宽度，可以调整 */
+  height: 200px; /* 设置水印的高度，可以调整 */
+  transform: rotate(-30deg); /* 旋转水印图片 */
 }
