@@ -148,6 +148,6 @@ body::after {
   z-index: 9999;
   pointer-events: none; /* 水印不可点击 */
   user-select: none; /* 禁止选中水印 */
-  width: 1800px; /* 设置水印的宽度，可以调整 */
+  width: 1650px; /* 设置水印的宽度，可以调整 */
   height: 1080px; /* 设置水印的高度，可以调整 */
 }
