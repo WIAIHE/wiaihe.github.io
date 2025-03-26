@@ -144,7 +144,7 @@ body::after {
   background-image: url('./background.jpg'); /* 替换为你图片的 URL */
   background-size: contain; /* 保持图片比例 */
   background-repeat: no-repeat;
-  opacity: 0.1; /* 设置水印的透明度 */
+  opacity: 0.25; /* 设置水印的透明度 */
   z-index: 9999;
   pointer-events: none; /* 水印不可点击 */
   user-select: none; /* 禁止选中水印 */
