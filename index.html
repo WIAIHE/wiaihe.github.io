@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>数独生成器_在线数独题目生成工具</title>
+		<meta name="description" content="数独生成器，一款数独谜题和答案在线生成API。5个难度级别，无限量随机数独谜题生成，还可以打印出来哦。"/>
+		<link href="./res/style.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="title">数独生成器</h1>
+			<div id="ad_line" style="text-align: center; margin: auto; margin-bottom: 10px;"></div>
+			<div class="handle">
+				<div class="input-group">
+					<span id="basic-addon1">难度</span>
+					<select id="txt-difficulty" class="form-control" placeholder="请选择生成难度" aria-describedby="basic-addon1">
+						<option value="easy" selected="">简单</option>
+						<option value="medium">中等</option>
+						<option value="hard">困难</option>
+						<option value="very-hard">非常困难</option>
+						<option value="insane">疯狂</option>
+						<option value="inhuman">地狱</option>
+					</select>
+				</div>
+				<div class="input-group">
+					<span id="basic-addon2">唯一解法</span><input id="txt-unique" type="checkbox" checked="">
+				</div>
+			</div>
+			<div class="handle">
+				<button id="btn-generate">生成</button>
+				<button id="btn-solve" style="background: #337ab7;">解谜</button>
+				<button id="btn-clear" style="background: #cf9b3c;">清空</button>
+				<button id="btn-download" style="background: #b77;">下载</button>
+				<button id="btn-print" style="background: #bbb;" data-toggle="tooltip">打印</button>
+			</div>
+			<div class="sudobox" id="sudoku-panel">
+				<input type="text" class="form-control" id="txt-puzzle" style="display: none;">
+				<input type="text" class="form-control" id="txt-solve" style="display: none;">
+				<table class="table table-striped" id="sudoku-table">
+					<tbody id="sudoku-board"></tbody>
+				</table>
+			</div>
+			<div class="examp">
+				<h3>工具简介:</h3>
+				<p>
+					数独是源自18世纪瑞士的一种数学游戏。是一种运用纸、笔进行演算的逻辑游戏。玩家需要根据盘面上的已知数字，推理出所有剩余空格的数字，并满足每一行、每一列、每一个粗线宫内的数字不重复。
+					<br/>数独生成器，一款数独在线生成工具，可以在线免费玩数独。5个难度级别，无限量随机数独谜题生成，还可以打印出来哦。
+					<br/>数独（Sudoku）是源自18世纪瑞士的一种数学游戏。是一种运用纸、笔进行演算的逻辑游戏。玩家需要根据9×9盘面上的已知数字，推理出所有剩余空格的数字，并满足每一行、每一列、每一个粗线宫（3*3）内的数字均含1-9，不重复。
+					<br/>数独盘面是个九宫，每一宫又分为九个小格。在这八十一格中给出一定的已知数字和解题条件，利用逻辑和推理，在其他的空格上填入1-9的数字。使1-9每个数字在每一行、每一列和每一宫中都只出现一次，所以又称“九宫格”。
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="./res/jquery.js"></script>
+<script src="./res/sudoku.js"></script>
+<script src="./res/html2canvas.min.js"></script>
+<script src="./res/jQuery.print.min.js"></script>
+<script  src="./res/index.js"></script>
